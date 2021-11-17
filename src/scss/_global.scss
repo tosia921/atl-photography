@@ -22,8 +22,14 @@ p {
     line-height: $line-height-lg;
 }
 
-// Spacing and heading styling for page sections
+.margin-top-small {
+    margin-top: 2rem;
+}
 
+// Spacing and heading styling for page section
+.page-section-small {
+    padding: 3.5rem 0 3.5rem 0 !important;
+}
 .page-section {
     padding: 6rem 0;
 
@@ -48,5 +54,15 @@ p {
 @include media-breakpoint-up(md) {
     section {
         padding: 9rem 0;
+    }
+}
+
+.margin-p-bottom {
+    margin-bottom: 2rem;
+}
+
+.padding-pricing {
+    @include media-breakpoint-up(lg) {
+        padding: 1rem;
     }
 }

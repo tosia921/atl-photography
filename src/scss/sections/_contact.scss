@@ -3,13 +3,22 @@
 //
 
 section#contact {
-    background-color: $gray-900;
-    background-image: url("../assets/img/map-image.png");
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: white;
 
-    .section-heading {
-        color: $white;
+    .email-phone {
+        font-size: 1.4rem;
+        text-decoration: none;
+        &:hover {
+            color: $yellow !important;
+        }
+    }
+
+    .first-col-contact {
+        margin-bottom: 2rem;
+        
+        @media only screen and (min-width: 768px) {
+            margin-bottom: 0;
+        }
     }
 
     form#contactForm {

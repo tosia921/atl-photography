@@ -3,50 +3,175 @@
 //
 
 header.masthead {
-    padding-top: 6rem + 4.5rem;
-    padding-bottom: 6rem;
-    text-align: center;
-    color: $white;
-    background-image: url("../assets/img/header-bg.jpg");
-    background-repeat: no-repeat;
-    background-attachment: scroll;
-    background-position: center center;
-    background-size: cover;
-
-    .masthead-subheading {
-        font-size: 1.5rem;
-        font-style: italic;
-        line-height: 1.5rem;
-        margin-bottom: 25px;
-        font-family: $subheadings-font-family;
-    }
-
-    .masthead-heading {
-        font-size: 3.25rem;
-        font-weight: 700;
-        line-height: 3.25rem;
-        margin-bottom: 2rem;
-        font-family: $headings-font-family;
+    margin-top: 5rem;
+    padding: 1rem 0;
+    .container {
+        height: calc(100vh - 5rem);
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        @include media-breakpoint-up(lg) {
+            flex-direction: column;
+        }
+        .row-12 {
+            height: 100%;
+            width: 100%;
+            @include media-breakpoint-up(lg) {
+                display: none;
+            }
+            .col-12 {
+                height: 100%;
+                width: 100%;
+                .img-landing {
+                    height: 70%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+                .masthead-subtitle-surname {
+                    text-align: center;
+                    font-size: 1.6rem;
+                    font-family: $headings-font-family;
+                    font-style: italic;
+                    font-weight: 600;
+                }
+            }
+            .masthead-title {
+                margin-top: 1rem;
+                text-align: center;
+                font-size: 2rem;
+                font-family: $headings-font-family;
+                text-transform: uppercase;
+                font-weight: $font-weight-bold;
+                margin-bottom: 1rem;
+            }
+            .masthead-subtitle {
+                text-align: center;
+                font-size: 1.4rem;
+                font-family: $headings-font-family;
+                font-style: italic;
+                font-weight: 400;
+            }
+            
+        }
+        .row-4 {
+            height: 60%;
+            width: 100%;
+            display: none;
+            padding-bottom: 2rem;
+            @include media-breakpoint-up(lg) {
+                display: flex;
+            }
+            .img-landing-lg {
+                display: none;
+                @include media-breakpoint-up(lg) {
+                    display: flex;
+                    height: 100%;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+            .masthead-title {
+                margin-top: 1rem;
+                text-align: center;
+                font-size: 2rem;
+                font-family: $headings-font-family;
+                text-transform: uppercase;
+                font-weight: $font-weight-bold;
+            }
+            .masthead-subtitle {
+                text-align: center;
+                font-size: 1.4rem;
+                font-family: $headings-font-family;
+                font-weight: 400;
+                font-style: italic;
+                margin-bottom: 2rem;
+            }
+        }
+        .row.landing-text-lg {
+            display: none;
+            @include media-breakpoint-up(lg) {
+                display: flex;
+                height: 40%;
+                width: 100%;
+            }
+            .col-12 {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                .masthead-title {
+                    margin-top: 1rem;
+                    text-align: center;
+                    font-size: 2rem;
+                    font-family: $headings-font-family;
+                    text-transform: uppercase;
+                    font-weight: $font-weight-bold;
+                    @include media-breakpoint-up(lg) {
+                        font-size: 4rem;
+                    }
+                }
+                .masthead-subtitle {
+                    text-align: center;
+                    font-size: 1.4rem;
+                    font-family: $headings-font-family;
+                    font-weight: 400;
+                    font-style: italic;
+                    margin-bottom: 2rem;
+                    @include media-breakpoint-up(lg) {
+                        margin-bottom: 0;
+                        font-size: 2rem;
+                    }
+                }
+            }
+        }
     }
 }
 
 @include media-breakpoint-up(md) {
     header.masthead {
-        padding-top: 12.5rem + 4.5rem;
-        padding-bottom: 12.5rem;
-
-        .masthead-subheading {
-            font-size: 2.25rem;
-            font-style: italic;
-            line-height: 2.25rem;
-            margin-bottom: 2rem;
-        }
-
-        .masthead-heading {
-            font-size: 4.5rem;
-            font-weight: 700;
-            line-height: 4.5rem;
-            margin-bottom: 4rem;
+        margin-top: 5rem;
+        padding: 1rem 0;
+        .container {
+            height: calc(100vh - 5rem);
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            .row {
+                height: 100%;
+                width: 100%;
+                .col-12 {
+                    height: 100%;
+                    width: 100%;
+                    .img-landing {
+                        height: 70%;
+                        width: 100%;
+                        object-fit: contain;
+                    }
+                    .masthead-subtitle-surname {
+                        text-align: center;
+                        font-size: 2rem;
+                        font-family: $headings-font-family;
+                        font-style: italic;
+                        font-weight: 600;
+                    }
+                }
+                .masthead-title {
+                    margin-top: 1rem;
+                    text-align: center;
+                    font-size: 3rem;
+                    font-family: $headings-font-family;
+                    text-transform: uppercase;
+                    font-weight: $font-weight-bold;
+                }
+                .masthead-subtitle {
+                    text-align: center;
+                    font-size: 1.8rem;
+                    font-family: $headings-font-family;
+                    font-style: italic;
+                    font-weight: 400;
+                    margin-bottom: 2rem;
+                }
+            }
         }
     }
 }

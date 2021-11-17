@@ -22,3 +22,19 @@
 .img-brand {
     height: 2.75rem;
 }
+
+.team-row {
+    @include media-breakpoint-up(lg) {
+    padding: 0 7rem 0 7rem;
+    }
+    @include media-breakpoint-up(xl) {
+        padding: 0 10rem 0 10rem;
+    }
+    @include media-breakpoint-up(xxl) {
+        padding: 0 13rem 0 13rem;
+    }
+}
+
+.aboout-us-link {
+    
+}

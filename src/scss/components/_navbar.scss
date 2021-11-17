@@ -3,12 +3,12 @@
 //
 
 #mainNav {
+    max-width: 100vw;
     padding-top: 1rem;
     padding-bottom: 1rem;
     background-color: $gray-900;
 
     .navbar-toggler {
-
         padding: 0.75rem;
         font-size: 0.75rem;
         font-family: $headings-font-family;
@@ -16,15 +16,17 @@
         font-weight: $font-weight-bold;
     }
 
-    .navbar-brand {
-        color: $primary;
-        font-family: $headings-font-family;
-        font-weight: $headings-font-weight;
-        letter-spacing: $headings-letter-spacing;
-        text-transform: uppercase;
-
-        img {
-            height: 1.5rem;
+    .container {
+        .navbar-brand {
+            img {
+                height: 2.5rem;
+                @include media-breakpoint-up(md) {
+                    height: 3rem;
+                }
+                @include media-breakpoint-up(lg) {
+                    height: 4rem;
+                }
+            }
         }
     }
 
@@ -48,27 +50,26 @@
 // Responsive styling for screen width equal to or greater than the large breakpoint
 @include media-breakpoint-up(lg) {
     #mainNav {
-        padding-top: 1.5rem;
-        padding-bottom: 1.5rem;
+        max-width: 100vw;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
         border: none;
-        background-color: transparent;
         transition: padding-top 0.3s ease-in-out,
             padding-bottom 0.3s ease-in-out;
 
         .navbar-brand {
-            font-size: 1.5em;
-            transition: font-size 0.3s ease-in-out;
-
+            transition: all 0.3s ease-in-out;
             img {
-                height: 2rem;
+                height: 5rem;
+
                 transition: height 0.3s ease-in-out;
             }
         }
 
         // Styling for when the navbar shrinks on larger screens
         &.navbar-shrink {
-            padding-top: 1rem;
-            padding-bottom: 1rem;
+            padding-top: 0.5rem;
+            padding-bottom: 0.5rem;
             background-color: $gray-900;
 
             .navbar-brand {
@@ -76,7 +77,10 @@
 
                 svg,
                 img {
-                    height: 1.5rem;
+                    height: 3rem;
+                    @include media-breakpoint-up(lg) {
+                        height: 3.5rem;
+                    }
                 }
             }
         }
