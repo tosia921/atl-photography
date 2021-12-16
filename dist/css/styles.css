@@ -11588,7 +11588,7 @@ header.masthead .container .row.landing-text-lg .col-12 .masthead-subtitle {
   }
   header.masthead .container .row .col-12 .masthead-subtitle-surname {
     text-align: center;
-    font-size: 2rem;
+    font-size: 2.7rem;
     font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
     font-style: italic;
     font-weight: 600;
@@ -11775,4 +11775,16 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .accordion-body-list-title {
   margin-top: 0.8rem;
+}
+
+.types-of-photo {
+  font-size: 1.2rem;
+}
+
+.types-of-services {
+  font-size: 1.8rem;
+}
+
+.instagram {
+  font-size: 1.4rem;
 }
