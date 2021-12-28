@@ -5,7 +5,7 @@
     margin-bottom: 1rem;
 }
 .price-tag {
-    font-size: 1.4rem;
+    font-size: 16px;
     font-weight: bold;
     text-align: end;
     margin-top: 1rem;
@@ -17,4 +17,17 @@
     &-item {
         
     }
+}
+.muted-small {
+    font-size: 14px;
+}
+.season-li {
+    font-weight: 500;
+    font-style: italic;
+}
+.small-margin-bottom {
+    margin-bottom: 0px;
+}
+.heading-margin-bottom {
+    margin-bottom: 30px !important;
 }
