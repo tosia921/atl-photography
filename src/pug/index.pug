@@ -3,10 +3,16 @@ html(lang='en')
 
     head
 
+        meta(property="og:title" ,content="Tomasz Lekawa Photography")
+        meta(property="og:image" content="https://www.atl-photography.co.uk/assets/.png")
+        meta(property="og:description", content="ATL Photography LTD website, learn about our us, our available services and pricing")
+
+        meta(property="og:url" content="http://www.atl-photography.co.uk")
+
         meta(charset='utf-8')
         meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=no')
-        meta(name='description', content='')
-        meta(name='author', content='')
+        meta(name='description', content='ATL Photography is a photography business created by Tomasz Lekawa that provides a lot of different photography services/')
+        meta(name='author', content='Tomasz Posiadala')
 
         title ATL Photography - Tomasz Lekawa 
 
@@ -29,7 +35,7 @@ html(lang='en')
         nav#mainNav.navbar.navbar-expand-lg.navbar-dark.fixed-top
             .container
                 a.navbar-brand(href='#page-top')
-                    img(src='assets/img/LogoWhite.png', alt='...')
+                    img(src='assets/img/LogoWhite.png', alt='logo')
                 button.navbar-toggler(type='button', data-bs-toggle='collapse', data-bs-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
                     | Menu
                     i.fas.fa-bars.ms-1
@@ -169,7 +175,7 @@ html(lang='en')
                             | His photographic works have been published in many magazines around the world. This includes publications in magazines from Australia, the USA, Canada, Brazil, the United Arab Emirates, France, Italy, Spain, Poland, Russia, Saudi Arabia, the United Kingdom, Greece, India and the Czech Republic. His works have also been published on the covers of magazines from New York, Paris Sydney, Toronto and more.
                         p.large.text-muted
                             | For more information about us, our work and publications, please visit our
-                            a.aboout-us-link(href="https://www.lekawa-photography.co.uk/about" target="_blank") Portfolio website. 
+                            a.aboout-us-link(href="https://www.lekawa-photography.co.uk/" target="_blank") Portfolio website. 
 
         // Portfolio
         section#portfolio.page-section
@@ -323,18 +329,18 @@ html(lang='en')
         footer.footer.py-4
             .container
                 .row.align-items-center
-                    .col-lg-4.text-lg-start
+                    .col-lg-12.text-jusify.pb-2
                         | Copyright &copy; www.atl-photography.co.uk 2021
-                    .col-lg-4.my-3.my-lg-0
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-twitter
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-facebook-f
-                        a.btn.btn-dark.btn-social.mx-2(href='#!')
-                            i.fab.fa-linkedin-in
-                    .col-lg-4.text-lg-end
-                        a.link-dark.text-decoration-none.me-3(href='#!') Privacy Policy
-                        a.link-dark.text-decoration-none(href='#!') Terms of Use
+                    //- .col-lg-4.my-3.my-lg-0
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-twitter
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-facebook-f
+                    //-     a.btn.btn-dark.btn-social.mx-2(href='#!')
+                    //-         i.fab.fa-linkedin-in
+                    .col-lg-12.text-jusify
+                        a.link-dark.text-decoration-none.me-3(href='/privacypolicy.html') Privacy Policy
+                        a.link-dark.text-decoration-none(href='/termsandconditions.html') Terms and Conditions
 
         // Bootstrap core JS
         //- script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js')
