@@ -56,12 +56,12 @@ html(lang='en')
             .container.landing-page
                 .row.row-12
                     .col-12
-                        .masthead-title ATL PHOTOGRAPHY
+                        .masthead-title ATL PHOTOGRAPHY LTD
                         .masthead-subtitle-surname Tomasz Lekawa
                         img(src='assets/img/_DSC5428.jpeg', alt='...').img-landing
                 .row.landing-text-lg
                     .col-12
-                        .masthead-title ATL PHOTOGRAPHY
+                        .masthead-title ATL PHOTOGRAPHY LTD
                         .masthead-subtitle-surname Tomasz Lekawa
                 .row.row-4
                     .col-4
@@ -76,9 +76,9 @@ html(lang='en')
             .container
                 .text-center
                     h2.section-heading.text-uppercase WHAT WE DO
-                    h4.section-subheading.types-of-photo.mb-3 Types of photography
+                    //h4.section-subheading.types-of-photo.mb-3 Types of photography
                     h3.section-subheading.text-muted.types Classic Portraits, Headshots, Fine Art, Street Portraits, Street Fashion, Editorial Photography, Boudoir, Studio/Indoor/Outdoor Photography
-                    h4.section-subheading.types-of-photo.mb-3.mt-3 Types of services
+                    h4.section-subheading.types-of-photo--services.mb-3.mt-3 Types of services
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
@@ -138,14 +138,14 @@ html(lang='en')
                         //- p.text-muted
                         //-     | Photo modeling with product presentation for boutiques, shops and individuals from clothing and fashion industry
                     
-        // About Us
+        // Team
         section#team.page-section.bg-light
             .container
                 .text-center
                     h2.section-heading.text-uppercase About Us
                     h3.section-subheading.text-muted Learn more about us.
                 .row.team-row
-                    .col-lg-6
+                    .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/tomek_about-2.jpeg', alt='Tomasz Lekawa')
                             h4 Tomasz Lekawa
@@ -156,7 +156,12 @@ html(lang='en')
                             //-     i.fab.fa-facebook-f
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //-     i.fab.fa-linkedin-in
-                    .col-lg-6
+                    .col-lg-4
+                        .team-member.cooperation
+                            h5 Cooperation with
+                            i.fas.fa-arrow-right.arrow-right
+                            i.fas.fa-arrow-down.arrow-down
+                    .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/alicja_about-2.jpeg', alt='Alicja Lekawa')
                             h4 Alicja Lekawa
@@ -262,10 +267,10 @@ html(lang='en')
                                 ul.accordion-body-list
                                     li.accordion-body-list-item 
                                         span.season-li.heading-margin-bottom IN THE UK (in the most popular cities like London, Manchester, Liverpool, Leeds, Birmingham, Edinburgh, etc.).
-                                        p.small-margin-bottom - Single day trips (transport included) -
+                                        //p.small-margin-bottom - Single day trips (transport included) -
                                             span.price-tag From £299.00 (per person)
-                                        p.small-margin-bottom - Weekend trips, two nights stay in at least a 3-star hotel (transport &amp; accommodation included) -
-                                            span.price-tag From £499.00 (per person) 
+                                        p.small-margin-bottom - Weekend trips, two nights stay in at least a 3-star hotel (accommodation included) -
+                                            span.price-tag From £499.00 (per person, includes two Standard photo sessions with 10 digital images from each session. For 18+ only.) 
                                     li.accordion-body-list-item 
                                         span.season-li.heading-margin-bottom IN EUROPE (Paris, Amsterdam, Brussels).
                                         p.small-margin-bottom - Weekend trips, 3 nights stay in at least a 3-star hotel with breakfast (transport from London & accommodation are included) -
@@ -273,7 +278,7 @@ html(lang='en')
                                         p   The price of £699.00 includes two Standard photo sessions with 10 digital images from each session. For 18+ only. 
                     .accordion-item
                         h2#headingSix.accordion-header
-                            button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix")  STANDARD PHOTOSHOOT
+                            button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix")  NEXT DAY PHOTOS
                         #collapseSix.accordion-collapse.collapse(aria-labelledby="headingFive" data-bs-parent="#accordionExample")
                             .accordion-body
                                 p The normal time for the realisation of our orders is up to 6 weeks. This option is for those who need to get their photos ASAP, which means the next day until 11:59 pm (this option is only for orders up to 20 images - STANDARD or PORTFOLIO)

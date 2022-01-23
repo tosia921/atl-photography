@@ -38,3 +38,37 @@
 .aboout-us-link {
     
 }
+.cooperation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 40%;
+    @media only screen and (max-width: 991px) {
+        padding-top: 0;
+        flex-direction: column;
+        font-size: 15px;
+      }
+    h5 {
+        margin-right: 5px;
+        margin-bottom: 0;
+        font-style: italic;
+        font-weight: 600;
+        @media only screen and (max-width: 991px) {
+            font-size: 18px;
+        }
+    }
+    .arrow-right {
+        @media only screen and (max-width: 991px) {
+            display: none;
+          }
+    }
+    .arrow-down {
+        display: none;
+        @media only screen and (max-width: 991px) {
+            display: block;
+            margin-top: 10px;
+            font-size: 20px;
+          }
+
+    }
+}

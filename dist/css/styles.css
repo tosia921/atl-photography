@@ -11693,6 +11693,46 @@ header.masthead .container .row.landing-text-lg .col-12 .masthead-subtitle {
   }
 }
 
+.cooperation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40%;
+}
+@media only screen and (max-width: 991px) {
+  .cooperation {
+    padding-top: 0;
+    flex-direction: column;
+    font-size: 15px;
+  }
+}
+.cooperation h5, .cooperation .h5 {
+  margin-right: 5px;
+  margin-bottom: 0;
+  font-style: italic;
+  font-weight: 600;
+}
+@media only screen and (max-width: 991px) {
+  .cooperation h5, .cooperation .h5 {
+    font-size: 18px;
+  }
+}
+@media only screen and (max-width: 991px) {
+  .cooperation .arrow-right {
+    display: none;
+  }
+}
+.cooperation .arrow-down {
+  display: none;
+}
+@media only screen and (max-width: 991px) {
+  .cooperation .arrow-down {
+    display: block;
+    margin-top: 10px;
+    font-size: 20px;
+  }
+}
+
 section#contact {
   background-color: white;
 }
@@ -11796,6 +11836,11 @@ section#contact form#contactForm :-ms-input-placeholder {
 
 .types-of-photo {
   font-size: 1.2rem;
+}
+
+.types-of-photo--services {
+  font-size: 1.7rem;
+  font-style: italic;
 }
 
 .types-of-services {
