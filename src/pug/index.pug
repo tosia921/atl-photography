@@ -74,11 +74,12 @@ html(lang='en')
         // Services
         section#services.page-section-small.page-section
             .container
-                .text-center
+                .text-center-services
                     h2.section-heading.text-uppercase WHAT WE DO
                     //h4.section-subheading.types-of-photo.mb-3 Types of photography
                     h3.section-subheading.text-muted.types Classic Portraits, Headshots, Fine Art, Street Portraits, Street Fashion, Editorial Photography, Boudoir, Studio/Indoor/Outdoor Photography
-                    h4.section-subheading.types-of-photo--services.mb-3.mt-3 Types of services
+                    div.services-crooked
+                        h4.types-of-photo--services.mb-3.mt-3 Types of services
                 .row.text-center
                     .col-md-4
                         span.fa-stack.fa-4x
@@ -158,14 +159,14 @@ html(lang='en')
                             //-     i.fab.fa-linkedin-in
                     .col-lg-4
                         .team-member.cooperation
-                            h5 Cooperation with
-                            i.fas.fa-arrow-right.arrow-right
-                            i.fas.fa-arrow-down.arrow-down
+                            h5 Cooperation with:
+                            //i.fas.fa-arrow-right.arrow-right
+                            //i.fas.fa-arrow-down.arrow-down
                     .col-lg-4
                         .team-member
                             img.mx-auto.rounded-circle(src='assets/img/team/alicja_about-2.jpeg', alt='Alicja Lekawa')
                             h4 Alicja Lekawa
-                            p.text-small.mb-1 (beauty cooperator)
+                            p.text-small.mb-1 (beauty coordinator)
                             p.text-muted Internationally published freelance Photomodel, Makeup Artist & Stylist
                             //- a.btn.btn-dark.btn-social.mx-2(href='#!')
                             //-     i.fab.fa-twitter
@@ -265,16 +266,19 @@ html(lang='en')
                                 p Trips are in a group of 4 to 6 models plus a Photographer, Make-up Artist and Stylist.
                                 h6.accordion-body-list-title Available options:
                                 ul.accordion-body-list
-                                    li.accordion-body-list-item 
+                                    li.accordion-body-list-item
                                         span.season-li.heading-margin-bottom IN THE UK (in the most popular cities like London, Manchester, Liverpool, Leeds, Birmingham, Edinburgh, etc.).
                                         //p.small-margin-bottom - Single day trips (transport included) -
                                             span.price-tag From £299.00 (per person)
-                                        p.small-margin-bottom - Weekend trips, two nights stay in at least a 3-star hotel (accommodation included) -
-                                            span.price-tag From £499.00 (per person, includes two Standard photo sessions with 10 digital images from each session. For 18+ only.) 
+                                        p.mb-0 - Weekend trips, two nights stay in at least a 3-star hotel (accommodation included) -
+                                            span.price-tag From £499.00 
+                                            span.price-tag-small (per person)
+                                        p   The price of £499.00 person, includes two Standard photo sessions with 10 digital images from each session. For 18+ only.
                                     li.accordion-body-list-item 
                                         span.season-li.heading-margin-bottom IN EUROPE (Paris, Amsterdam, Brussels).
                                         p.small-margin-bottom - Weekend trips, 3 nights stay in at least a 3-star hotel with breakfast (transport from London & accommodation are included) -
-                                            span.price-tag From £699.00 (per person)
+                                            span.price-tag From £699.00 
+                                            span.price-tag-small (per person)
                                         p   The price of £699.00 includes two Standard photo sessions with 10 digital images from each session. For 18+ only. 
                     .accordion-item
                         h2#headingSix.accordion-header
@@ -296,8 +300,10 @@ html(lang='en')
                             button.accordion-button.collapsed(type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven")  MODELING
                         #collapseSeven.accordion-collapse.collapse(aria-labelledby="headingSeven" data-bs-parent="#accordionExample")
                             .accordion-body
-                                p Modelling with product presentations for shops, boutiques and individuals from the clothing and fashion industry. Priced individually depending on the project, its difficulty and time needed to finish the project. 
-                                p Model: Alicja Lekawa                
+                                p Modelling with product presentations for shops, boutiques and individuals from the clothing and fashion industry. Priced individually. Please contact us for more info.
+                                p Model: Alicja Lekawa
+                                p.see-prices Please see the sample of our work here:
+                                a.btn.btn-primary.btn-xl.text-uppercase.button-price(href='https://www.lekawa-photography.co.uk/modeling' target="_blank") MODELING               
         // Contact
         section#contact.page-section
             .container

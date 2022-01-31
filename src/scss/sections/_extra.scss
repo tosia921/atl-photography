@@ -1,9 +1,17 @@
 .types-of-photo {
     font-size: 1.2rem;
 }
+.services-crooked {
+    background-color: #212529;
+    margin-bottom: 1rem;
+}
 .types-of-photo--services {
     font-size: 1.7rem;
     font-style: italic;
+    color: #ffc800;
+    width: fit-content;
+    text-align: center;
+    padding: .2rem 5rem;
 }
 .types-of-services {
     font-size: 1.8rem;
@@ -14,3 +22,16 @@
 .accordion-button {
     font-weight: bold;
 }
+.text-center-services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.button-price {
+    padding: .8rem 1.5rem;
+}
+.see-prices {   
+    margin-bottom: 5px;
+    font-style: italic;
+    font-weight: 600;
+}   

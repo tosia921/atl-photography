@@ -10,6 +10,9 @@
     text-align: end;
     margin-top: 1rem;
 }
+.price-tag-small {
+    font-size: 15px;
+}
 .accordion-body-list-title {
     margin-top: 0.8rem;
 }
@@ -22,9 +25,12 @@
     font-size: 14px;
 }
 .season-li {
-    font-weight: 500;
+    font-weight: 900;
     font-style: italic;
+    font-size: 1.2rem;
+
 }
+
 .small-margin-bottom {
     margin-bottom: 0px;
 }
