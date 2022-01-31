@@ -11858,6 +11858,17 @@ section#contact form#contactForm :-ms-input-placeholder {
   text-align: center;
   padding: 0.2rem 5rem;
 }
+@media only screen and (max-width: 600px) {
+  .types-of-photo--services {
+    font-size: 1.3rem;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .what-we-do {
+    font-size: 2.3rem !important;
+  }
+}
 
 .types-of-services {
   font-size: 1.8rem;
