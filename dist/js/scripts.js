@@ -1,6 +1,6 @@
 /*!
 * Start Bootstrap - Agency v7.0.6 (undefined)
-* Copyright 2013-2022 undefined
+* Copyright 2013-2023 undefined
 * Licensed under undefined (https://github.com/StartBootstrap/startbootstrap-agency/blob/master/LICENSE)
 */
 //

@@ -42,4 +42,8 @@
     margin-bottom: 5px;
     font-style: italic;
     font-weight: 600;
-}   
+}  
+
+.full-height {
+    height: calc(100vh - 150px);
+}
